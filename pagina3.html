@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style3.css">
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style3.css">
+    
+
+</head>
+<body>
+
+    <main>
+
+        <h1 class="titulogaleria">Nossos momentos</h1>
+
+        <section class="galeria">
+
+            <div class="item">
+                    <img class="itemimg" src="Assets/mickey.jpeg" alt="foto da nossa viagem com o mickey">
+                </a>
+                <h2 class="itemh2">Nossa viagem especial.</h2>
+            </div>
+
+            <div class="item">
+                <a>
+                    <img class="itemimg" src="Assets/cerveja.jpeg" alt="tomando uma cerveja">
+                </a>
+                <h2 class="itemh2">Brindando nosso amor!</h2>
+            </div>
+
+            <div class="item">
+                <a>
+                    <img class="itemimg" src="Assets/amigos.jpeg" alt="foto dos nossos amigos">
+                </a>
+                <h2 class="itemh2">Foto com pessoas especiais</h2>
+            </div>
+            
+            <div class="item">
+                <a>
+                    <img class="itemimg" src="Assets/minnie.jpeg" alt="1">
+                </a>
+                <h2 class="itemh2">Nosso amor marcado na disney!</h2>
+            </div>
+
+            <div class="item">
+                <a>
+                    <img class="itemimg" src="Assets/clube.jpeg" alt="2">
+                </a>
+                <h2 class="itemh2">Passeio com nossa filha</h2>
+            </div>
+            
+            <div class="item">
+                <a>
+                    <img class="itemimg" src="Assets/gavioes.jpeg" alt="3">
+                </a>
+                <h2 class="itemh2">Desfilando na gaviões</h2>
+            </div>
+            
+
+            <!-- Adicione mais itens conforme necessário -->
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img class="modal-content" id="modal-img">
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+    
+    <script src="script.js" defer></script>
+
+    <div>
+    <button onclick="window.location.href='index.html'">Voltar para o ínicio.</button>
+</div>
+    
+</body>
+</html>
+

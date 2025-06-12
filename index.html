@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Áudio oculto -->
+  <audio id="musicareileao" src="Assets/musicareileao.mp3"></audio>
+
+  <div>
+    <h1>Clique no botão abaixo 💝</h1>
+    <button class="botao-inicial" onclick="tocarEMudarPagina()">💝</button>
+  </div>
+
+  <script>
+    function tocarEMudarPagina() {
+      const audio = document.getElementById("musicareileao");
+
+      audio.play().then(() => {
+        // Se tocar com sucesso, redireciona após 1 segundo
+        setTimeout(() => {
+          window.location.href = 'pagina2.html';
+        }, 1000);
+      }).catch(err => {
+        // Se o navegador bloquear, avisa e redireciona assim mesmo
+        alert("O navegador bloqueou a reprodução automática da música. Clique para permitir ou ative o som.");
+        window.location.href = 'pagina2.html';
+      });
+    }
+  </script>
+</body>
+</html>
